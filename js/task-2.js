@@ -22,17 +22,17 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
 
-const galleryList = document.querlySelector(".gallery");
+const galleryList = document.querySelector(".gallery");
 
 const galleryMarkup = images
   .map(
     ({ url, alt }) => `
-    < class = "gallery-item">
-    <img src=$"{url}" alt=$"{"alt"} class="gallery-img">
-    </li>
+      <li class="gallery-item">
+        <img src="${url}" alt="${alt}" class="gallery-img">
+      </li>
     `
   )
   .join("");
